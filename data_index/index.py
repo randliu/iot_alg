@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.stats import kurtosis, skew
+from scipy.stats import  skew
 import pandas as pd
 
 def hello_world():
@@ -9,6 +9,7 @@ def hello_world():
 均值
 """
 def mean(data,sampling_rate=40000):
+    assert(len(data)>0)
     n = len(data)
     m = np.mean(data)
 
@@ -19,6 +20,9 @@ def mean(data,sampling_rate=40000):
 最大
 """
 def max(data):
+
+    assert (data is not None)
+
     n = len(data)
     #sampling_peroid = n/sampling_rate
 
@@ -59,10 +63,14 @@ def root_mean_square(data,sampling_rate=40000):
 """
 峭度
 """
-def iot_kurtosis(data,sampling_rate=40000):
-    k= kurtosis(data)
-    return k
 
+
+def iot_kurtosis(data,sampling_rate=40000):
+    Dx = np.mean((x-np.mean(x))**2)
+    N = len(x)
+    kurtosis = np.sum(((x-np.mean(x))/np.sqrt(Dx))**4)/N -3
+
+    return kurtosis
 
 """
 峰值
@@ -85,8 +93,11 @@ def peak_to_peak(x):
 偏度
 """
 def iot_skew(data):
-    sk = skew(data)
-    return sk
+    assert (data is not None)
+    Dx = np.mean((x-np.mean(x))**2)
+    N = len(x)
+    skewness = np.sum(((x-np.mean(x))/np.sqrt(Dx))**3)/N
+    return skewness
 
 
 
@@ -108,10 +119,10 @@ def pulse_factor(data):
 """
 def crest_factor(data):
     max_data = np.max(data)
-    #RMS_data = np.power(np.mean(data**2),0.5)
-    RMS_data = root_mean_square(data)
+    RMS_data = np.power(np.mean(data**2),0.5)
     crest_factor = max_data/RMS_data
     return crest_factor
+
 
 
 
@@ -132,9 +143,11 @@ def waveform_factor(data):
 样本值的峰度（四阶矩）
 """
 def waveform_factor(data):
-    k = data.kurt()
+    RMS_data = np.power(np.mean(data**2),0.5)
+    mean_data = np.mean(np.abs(data))
+    waveform_factor = RMS_data/mean_data
+    return waveform_factor
 
-    return k
 
 
 """
@@ -147,46 +160,42 @@ def hanning(data):
 
 
 """
-fft
-FFT结果任意一点的频率为：假设信号采样频率为fs，
-从采样定理可以知道，信号抽样后，抽样信号的频谱是周期谱，
-其频谱的周期是抽样频率fs，因此，对信号做FFT时，无论你取多少点，
-其分析的频率范围就是0~fs，所以，如果你做N点的FFT（其实是离散傅里叶变换），
-则，FFT结果的两点之间的频率间隔是fs/N，这样，任一点k（k=0~N-1)代表的频率就是k*fs/N。
-另外，这N个点的FFT值是以N/2为对称的，所以，一般真正用到的只有N/2个点。N点取的大只说明谱线密一些而已，
-注意：采样定理非常重要啊！
-
-作者：李泽光
-链接：https://www.zhihu.com/question/27452867/answer/84237312
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 return dataFrame
 X轴是HZ
 Y轴是高度
 
 """
 def fft(data,sampling_rate=4000):
+    assert(len(data)>0)
+
+    #做一次缺省的FFT变换
     fft_result = np.fft.fft(data)
+
+    #先虚拟采样点数
     points = range(0,sampling_rate)
     n = len(data)
-    #frequency = np.arange(n / 2) / (n * interval)
+
+    #根据采样点数换算实际的采样频率矩阵
     frequency = np.arange(n / 2) / (n /sampling_rate)
 
+    #根据采样点数换算采样幅度矩阵
     amp = abs(fft_result[range(int(n / 2))] / n)
 
+    #生成（N*1的矩阵向量）
     #spectrum = pd.Series(amp)
+
+    #这里却一个数据异常保护处理，需要补上
+    #如果频率谱与幅度谱形状不一致的话，这里会报错
     freq = pd.Series(frequency)
 
+    #两个（N*1）的向量合并成一个N*2的向量
     spectrum = pd.DataFrame()
+
+    #列命名
     spectrum.insert(0,'AMP',amp )
     spectrum.insert(0, 'HZ',freq)
 
     return spectrum
-
-
-
-
 
 
 """
@@ -195,6 +204,8 @@ return pd.Series
 """
 def bonferroni(data):
     #assert isinstance(data, pd.Series)
+
+    #去除误差基准向量长度N设为整个数据的长度
     m = np.mean(data)   #均值为直流分量
 
     data_edit = data -m
@@ -207,7 +218,10 @@ def bonferroni(data):
 默认采样频率是1HZ
 """
 def acc_to_v_with_bonferroni(acc_data,sr=1):
+    assert(sr >0)
     acc_edit = bonferroni(acc_data)
+
+    #采用系统默认积分即可
     v = acc_edit.cumsum()*1/sr
 
     return v

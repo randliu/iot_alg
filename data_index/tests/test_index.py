@@ -17,7 +17,7 @@ cur_path = os.path.abspath(os.path.dirname(__file__))
 
 acc_path = os.path.join(cur_path, "..", "..", "notebook", "acc.csv")
 
-logging.getLogger("test").info("fdadaf")
+logging.getLogger("test").info("start test")
 
 print("=="*65)
 ds = "Using data source:%s"%str(acc_path)
@@ -60,7 +60,6 @@ class HelloWorldTestCase(TestCase):
 
     def tearDown(self):
         pass
-
 
 
 
@@ -156,9 +155,6 @@ class IntegralTest(TestCase):
         self.assertEqual(sum,sum2[len(self.s)-1])
 
 
-
-
-
     def test_acc_to_v_with_bonferroni_with_sr(self):
         sr=4000
         sum = np.sum(self.s)/sr
@@ -166,7 +162,6 @@ class IntegralTest(TestCase):
         sum2 = np.cumsum(pd.Series(self.s))
         #print(sum2)
         self.assertEqual(sum,18/sr)
-
 
     def test_acc_to_v_with_bonferroni2(self):
         sum = np.sum(self.s)
@@ -179,3 +174,12 @@ class IntegralTest(TestCase):
         y = get_data_Y()
         m_y =np.mean(y)
         self.assertEqual(m_y,-0.033256249999999994)
+
+    def test_y_mean2(self):
+        y = get_data_Y()
+        m_y =np.mean(y)
+        self.assertTrue(m_y+0.033256249999999994>=0)
+
+    def test_acc_to_v_with_bonferroni3(self):
+        sum = np.sum(self.s)
+        self.assertTrue(sum>0)

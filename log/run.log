@@ -1,727 +1,231 @@
-DEBUG 2019-04-01 08:28:04,264 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.000) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:28:27,250 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:28:27,255 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2024
-DEBUG 2019-04-01 08:29:13,274 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.000) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:29:18,354 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:29:18,359 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2024
-DEBUG 2019-04-01 08:29:38,376 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.000) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:29:40,827 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:29:40,828 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2024
-DEBUG 2019-04-01 08:29:41,791 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:29:41,792 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2024
-DEBUG 2019-04-01 08:29:42,975 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:29:42,976 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2024
-DEBUG 2019-04-01 08:30:52,838 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.000) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:30:59,073 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-DEBUG 2019-04-01 08:30:59,077 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>
-WARNING 2019-04-01 08:30:59,078 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2135
-DEBUG 2019-04-01 08:30:59,986 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-DEBUG 2019-04-01 08:30:59,986 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>
-WARNING 2019-04-01 08:30:59,987 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2135
-DEBUG 2019-04-01 08:31:00,987 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-DEBUG 2019-04-01 08:31:00,987 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>
-WARNING 2019-04-01 08:31:00,988 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2135
-DEBUG 2019-04-01 08:31:06,404 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-DEBUG 2019-04-01 08:31:06,404 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>]], 'path': 'date_index/current_datetime/'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>
-WARNING 2019-04-01 08:31:06,405 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 2135
-WARNING 2019-04-01 08:31:45,930 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:47,324 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:54,564 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:55,207 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:55,564 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:55,780 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:55,990 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:56,190 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:56,382 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:56,579 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:31:57,678 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:32:41,151 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:32:41,920 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:32:46,405 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:32:46,747 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime HTTP/1.1" 404 101
-DEBUG 2019-04-01 08:34:40,328 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,330 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,331 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:34:40,335 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,339 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:34:40,339 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:34:40,345 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,345 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:34:40,345 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:34:40,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
-DEBUG 2019-04-01 08:34:40,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:34:40,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
-DEBUG 2019-04-01 08:34:40,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
-DEBUG 2019-04-01 08:34:40,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
-DEBUG 2019-04-01 08:34:40,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
-DEBUG 2019-04-01 08:34:40,356 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:34:40,357 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:34:40,357 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:34:40,364 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,365 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,365 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,366 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,366 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:34:40,366 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:34:40,373 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,374 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,374 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,375 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:34:40,375 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:34:40,375 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:34:40,382 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,383 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
-DEBUG 2019-04-01 08:34:40,383 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,383 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,383 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:34:40,391 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,392 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,392 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,392 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:34:40,392 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:34:40,396 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:34:40,397 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,397 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:34:40,397 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:34:40,398 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
-DEBUG 2019-04-01 08:34:40,398 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:34:40,405 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,406 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,406 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,406 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,413 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,414 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:34:40,414 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,414 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,421 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,422 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
-DEBUG 2019-04-01 08:34:40,422 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,422 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,429 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,430 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:34:40,430 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,430 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,437 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,438 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:34:40,438 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,439 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,446 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,447 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,448 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,448 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:34:40,449 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:34:40,450 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
-DEBUG 2019-04-01 08:35:36,249 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,251 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,253 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:35:36,257 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,260 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:35:36,261 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:35:36,266 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,266 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:35:36,266 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
-DEBUG 2019-04-01 08:35:36,267 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
-DEBUG 2019-04-01 08:35:36,268 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
-DEBUG 2019-04-01 08:35:36,268 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
-DEBUG 2019-04-01 08:35:36,268 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
-DEBUG 2019-04-01 08:35:36,268 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
-DEBUG 2019-04-01 08:35:36,268 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
-DEBUG 2019-04-01 08:35:36,277 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
-DEBUG 2019-04-01 08:35:36,278 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:35:36,278 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:35:36,284 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,285 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,285 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,285 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,286 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:35:36,286 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:35:36,293 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,294 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,294 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,294 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
-DEBUG 2019-04-01 08:35:36,294 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:35:36,294 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
-DEBUG 2019-04-01 08:35:36,299 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,300 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
-DEBUG 2019-04-01 08:35:36,300 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,301 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,301 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:35:36,308 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,310 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,310 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,310 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
-DEBUG 2019-04-01 08:35:36,310 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
-DEBUG 2019-04-01 08:35:36,313 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:35:36,314 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,315 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:35:36,315 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_permission__old"; (params ())
-DEBUG 2019-04-01 08:35:36,315 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
-DEBUG 2019-04-01 08:35:36,315 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
-DEBUG 2019-04-01 08:35:36,322 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,324 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,324 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,324 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,331 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,332 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:35:36,332 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,332 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,339 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,340 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
-DEBUG 2019-04-01 08:35:36,340 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,340 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:35:36,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,349 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,356 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,357 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
-DEBUG 2019-04-01 08:35:36,358 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,358 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,364 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,365 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,365 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,365 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
-DEBUG 2019-04-01 08:35:36,367 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
-DEBUG 2019-04-01 08:35:36,367 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
-WARNING 2019-04-01 08:35:50,655 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime HTTP/1.1" 404 101
-WARNING 2019-04-01 08:35:55,704 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /date_index/current_datetime/ HTTP/1.1" 404 102
-WARNING 2019-04-01 08:36:26,434 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /data_index/current_time HTTP/1.1" 404 97
-WARNING 2019-04-01 08:36:26,663 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /favicon.ico HTTP/1.1" 404 85
-DEBUG 2019-04-01 08:36:42,564 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.001) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:36:45,995 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/utils.py utils.py utils execute 111: (0.000) 
-            SELECT name, type FROM sqlite_master
-            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
-            ORDER BY name; args=None
-DEBUG 2019-04-01 08:36:49,435 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py base.py base _resolve_lookup 872: Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'data_index.urls' from '/Users/rand/Code/PycharmProjects/iot_alg/data_index/urls.py'> (data_index:data_index) 'data_index/'>, <URLPattern '^current_datetime/$' [name='current_datetime']>]], 'path': 'data_index/current_time'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
-    (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-WARNING 2019-04-01 08:36:49,439 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /data_index/current_time HTTP/1.1" 404 2211
-INFO 2019-04-01 08:36:58,145 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /data_index/current_datetime HTTP/1.1" 301 0
-INFO 2019-04-01 08:36:58,148 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/core/servers/basehttp.py basehttp.py basehttp log_message 124: "GET /data_index/current_datetime/ HTTP/1.1" 200 112
+DEBUG 2019-04-08 14:13:00,440 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,442 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,443 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:13:00,447 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,450 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:13:00,451 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:13:00,456 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,456 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:13:00,456 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:13:00,457 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:13:00,457 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:13:00,457 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:13:00,457 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+DEBUG 2019-04-08 14:13:00,458 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:13:00,458 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+DEBUG 2019-04-08 14:13:00,458 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+DEBUG 2019-04-08 14:13:00,458 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+DEBUG 2019-04-08 14:13:00,458 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:13:00,459 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+DEBUG 2019-04-08 14:13:00,459 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:13:00,468 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:13:00,468 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:13:00,468 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:13:00,475 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,476 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,476 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,476 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,477 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:13:00,477 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:13:00,485 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,486 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,487 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,487 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:13:00,487 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:13:00,487 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:13:00,492 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,493 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+DEBUG 2019-04-08 14:13:00,493 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,494 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,494 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:13:00,501 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,502 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,502 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,502 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:13:00,502 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:13:00,506 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:13:00,507 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,507 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:13:00,507 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:13:00,507 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:13:00,507 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:13:00,514 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,515 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,515 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,515 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,521 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,522 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:13:00,523 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,523 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,529 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,530 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+DEBUG 2019-04-08 14:13:00,530 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,530 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,536 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,538 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:13:00,538 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,538 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,545 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,546 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:13:00,547 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,547 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,552 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,554 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,554 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,554 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:13:00,555 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:13:00,556 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+DEBUG 2019-04-08 14:15:08,067 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,068 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,069 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:15:08,072 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,075 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:15:08,075 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:15:08,080 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,080 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:15:08,081 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:15:08,081 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:15:08,081 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:15:08,081 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:15:08,082 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+DEBUG 2019-04-08 14:15:08,082 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:15:08,082 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+DEBUG 2019-04-08 14:15:08,082 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+DEBUG 2019-04-08 14:15:08,082 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+DEBUG 2019-04-08 14:15:08,083 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:15:08,083 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+DEBUG 2019-04-08 14:15:08,083 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:15:08,093 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:15:08,093 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:15:08,093 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:15:08,100 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,102 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,102 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,102 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,102 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:15:08,103 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:15:08,110 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,111 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,111 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,111 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:15:08,112 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:15:08,112 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:15:08,117 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,118 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+DEBUG 2019-04-08 14:15:08,118 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,119 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,119 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:15:08,128 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,129 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,129 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,129 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:15:08,130 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:15:08,133 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:15:08,134 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,134 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:15:08,134 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:15:08,135 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:15:08,135 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:15:08,141 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,142 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,142 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,142 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,149 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,150 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:15:08,150 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,150 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,156 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,158 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+DEBUG 2019-04-08 14:15:08,158 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,158 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,165 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,166 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:15:08,167 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,167 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,174 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,175 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:15:08,175 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,175 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,181 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,182 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,182 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,182 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:15:08,184 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:15:08,184 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+DEBUG 2019-04-08 14:29:30,332 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,334 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,335 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:29:30,338 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,341 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:29:30,341 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:29:30,346 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:29:30,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:29:30,347 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:29:30,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:29:30,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:29:30,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+DEBUG 2019-04-08 14:29:30,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:29:30,348 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+DEBUG 2019-04-08 14:29:30,349 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+DEBUG 2019-04-08 14:29:30,349 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+DEBUG 2019-04-08 14:29:30,349 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+DEBUG 2019-04-08 14:29:30,349 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+DEBUG 2019-04-08 14:29:30,350 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+DEBUG 2019-04-08 14:29:30,358 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2019-04-08 14:29:30,358 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:29:30,359 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:29:30,366 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,367 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,368 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,368 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,368 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:29:30,368 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:29:30,375 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_admin_log" RENAME TO "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,376 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,377 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,377 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_admin_log__old"; (params ())
+DEBUG 2019-04-08 14:29:30,377 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:29:30,377 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2019-04-08 14:29:30,383 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,384 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+DEBUG 2019-04-08 14:29:30,384 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,384 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,384 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:29:30,392 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "django_content_type" RENAME TO "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,393 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,393 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,394 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "django_content_type__old"; (params ())
+DEBUG 2019-04-08 14:29:30,394 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2019-04-08 14:29:30,399 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_permission" RENAME TO "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:29:30,400 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,400 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:29:30,400 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_permission__old"; (params ())
+DEBUG 2019-04-08 14:29:30,401 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2019-04-08 14:29:30,401 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2019-04-08 14:29:30,407 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,409 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,409 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,409 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,415 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,416 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:29:30,416 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,416 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,423 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,424 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+DEBUG 2019-04-08 14:29:30,424 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,424 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,430 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,432 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:29:30,432 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,432 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,439 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,440 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+DEBUG 2019-04-08 14:29:30,440 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,440 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,446 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: ALTER TABLE "auth_user" RENAME TO "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,448 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,448 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: INSERT INTO "auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,448 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: DROP TABLE "auth_user__old"; (params ())
+DEBUG 2019-04-08 14:29:30,450 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+DEBUG 2019-04-08 14:29:30,450 /Users/rand/anaconda2/envs/pose/lib/python3.6/site-packages/django/db/backends/base/schema.py schema.py schema execute 124: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
